@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(10deg, #ff6792, #f3edff);
+            color: #fff;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            border-radius: 12px;
+            width: 400px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-top: 15px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        input {
+            width: calc(100% - 22px);
+            padding: 12px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #000000;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .password-container {
+            position: relative;
+        }
+
+        #password {
+            width: calc(100% - 42px);
+        }
+
+        .show-password {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #888;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>User Profile</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" value="Preethi MH" disabled>
+
+        <label for="password">Password:</label>
+        <div class="password-container">
+            <input type="password" id="password" name="password" value="password" disabled>
+            <span class="show-password" onclick="showPassword()">👁️</span>
+        </div>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" value="#12, Ram Street, Jayanagar , Mumbai" disabled>
+
+        <label for="phone">Mobile Number:</label>
+        <input type="tel" id="phone" name="phone" value="9740566016" disabled>
+    </div>
+
+    <script>
+        function showPassword() {
+            var passwordInput = document.getElementById("password");
+            passwordInput.type = (passwordInput.type === "password") ? "text" : "password";
+        }
+    </script>
+</body>
+</html>
+

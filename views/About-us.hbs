@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curly Hair Care</title>
+    <style>
+        main {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: black;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: black;
+            text-align: center;
+            padding: 1em;
+            font-family: 'Roboto', sans-serif;
+            
+            
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        section.about {
+            background-color: white;
+            color: black;
+        }
+
+        section.products {
+            background-color: white;
+            color: #333;
+        }
+        section.journey{
+            background-color: white ;
+            color:black
+            
+        }
+
+        section.contact {
+            background-color: #fff;
+            color: #333;
+        }
+
+        h2 {
+            color: #7f3fff;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        h1 {
+            color: white
+            
+            
+        }
+
+        p {
+            max-width: 800px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            width: 50 px;
+            text-align: center;
+        }
+        .sub_container1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 410px;
+            background-color: white;
+            text-align: center;
+            align-items:normal;
+            gap: 40px;
+            font-weight: 300;
+        }
+        .sub_container2{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            height: 300px;
+            gap: 55px
+
+
+        }
+        .sub_container3{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            height: 300px;
+            gap: 55px
+        }
+
+        #img_1 {
+            width: 5000px;
+            height: 450px;
+            float: right;
+            width: 33.33%;
+            padding: 10px;
+            position: relative;
+            bottom: 20%;
+        }
+        #img2
+        {
+            width: 450px;
+            height: 500px;
+            position:relative;
+            bottom: 35%;
+            
+
+
+        }
+        #img3
+        {   
+            width: 450px;
+            height: 400px;
+            position:relative;
+            bottom: 30%;
+            
+        }
+
+        .item1 {
+            flex: 0 0 auto;
+            margin: 20px;
+            width: 500px;
+            padding: 20px;
+            background-color: white;
+            border-radius : 8px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+            align-self: flex-start;
+        }
+        .item2 {
+            flex: 0 0 auto;
+            margin: 20px;
+            width: 500px;
+            height:max-content;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+            position: relative;
+            bottom: 10%;
+        }
+        .item3 {
+            flex: 0 0 auto;
+            margin: 20px;
+            width: 500px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+            align-self: flex-end;
+        }
+        
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #ff7e67;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e66052;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>ABOUT US</h1>
+    </header>
+    <main>
+   
+    </section>
+    <section class="journey">
+    <h2><center>Our Journey</h2></center>
+    <section class="container">
+        <div class="sub_container1">
+            <div class="item1">
+                <h3>When did we start?</h3>
+                <p>We started All Things Curly back in 2020, with a simple idea to help people embrace their natural
+                    curls and waves.
+                    We’re a team of enthusiastic and community-oriented people dedicated to helping you achieve
+                    your #hairgoals. Based in Bengaluru, this is born and made in India! </p>
+                </div>
+            <img id="img_1" src="Curly-hair-goals-girl-rk.png" >
+            </div>
+            <div class="sub_container2">
+                <div>
+                    <img id="img2" src="Inclusivity.png">
+                </div>
+                <br>
+                <br>
+                <div class="item2">
+                    <h3>Social Responsibility</h3>
+                    <p>We are dedicated to making hair care inclusive to all hair types, especially curly hair. We strive to make our clients proud to show off their curls, and not to hide them.  </p>
+                </div>
+            </div>
+            <div class="sub_container3">
+                <div class="item3">
+                    <h3>The Best Products</h3>
+                    <p>At All Things Curly, we give you the ultimate guide to the products best suited to your unique hair type.</p>
+                </div>
+            <img id="img3" src="Curly-pink-pdt-without-bg.png">
+        </div>
+</section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like more information, feel free to reach out to us using the form below:
+        </p>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</main>
+</body>
+
+</html>

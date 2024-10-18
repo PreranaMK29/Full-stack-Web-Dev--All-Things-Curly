@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         input {
+            width: calc(100% - 22px);
+            padding: 12px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #000000;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .password-container {
+            position: relative;
+        }
+
+        #password {
+            width: calc(100% - 42px);
+        }
+
+        .show-password {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #888;
+            font-size: 18px;
+        }
+    </style>
+    <script>
+        function redirectToWelcome() {
+          window.location.href = "/welcome.html";
+        }
+      </script>
+</head>
+<body>
+    <P style="font-size: 35px;"><b>Welcome!</b></p>
+    <form name="loginform"   action="welcome.html" >
+       
+        <label for="name1" style="font-weight: 200;">User Name:</label><br>
+        <input type="text" id="name1" name="name" placeholder="user name" required><br><br>
+       
+        <label style="font-weight: 200;">Password :</label><br>
+        <input type="password" id="pass" name="password" size="15" placeholder="Enter Password" required><br><Br>
+        <input type="submit" value="Login" style="background-color: black;color: white;" onclick="redirectToWelcome()">
+        
+
+    </form>
+</body>
+</html>
